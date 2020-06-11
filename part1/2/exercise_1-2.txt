@@ -1,0 +1,9 @@
+Script started on 2020-06-11 22:36:22+03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="160" LINES="50"]
+]0;mtuomiko@armature: ~/projects/docker-devops/part1/2[01;32mmtuomiko@armature[00m:[01;34m~/projects/docker-devops/part1/2[00m$ docker ps -a
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+]0;mtuomiko@armature: ~/projects/docker-devops/part1/2[01;32mmtuomiko@armature[00m:[01;34m~/projects/docker-devops/part1/2[00m$ docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+]0;mtuomiko@armature: ~/projects/docker-devops/part1/2[01;32mmtuomiko@armature[00m:[01;34m~/projects/docker-devops/part1/2[00m$ exit
+exit
+
+Script done on 2020-06-11 22:36:31+03:00 [COMMAND_EXIT_CODE="0"]

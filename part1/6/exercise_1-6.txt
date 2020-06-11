@@ -1,0 +1,2 @@
+Run image with the following command to get clock functionality starting from number 55:
+docker run docker-clock -c 55

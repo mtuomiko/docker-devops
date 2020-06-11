@@ -1,0 +1,10 @@
+Script started on 2020-06-11 22:44:25+03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="160" LINES="50"]
+]0;mtuomiko@armature: ~/projects/docker-devops/part1/3[01;32mmtuomiko@armature[00m:[01;34m~/projects/docker-devops/part1/3[00m$ exitdocker images[1Pps -aimagesexit[K[Kdocker run -it devopsdockeruh/pull_exercise
+[1G[0JGive me the password: [23G[1G[0JGive me the password: [23Gbasics
+You found the correct password. Secret message is:
+"This is the secret message"
+
+]0;mtuomiko@armature: ~/projects/docker-devops/part1/3[01;32mmtuomiko@armature[00m:[01;34m~/projects/docker-devops/part1/3[00m$ exit
+exit
+
+Script done on 2020-06-11 22:44:41+03:00 [COMMAND_EXIT_CODE="0"]

@@ -1,0 +1,40 @@
+Script started on 2020-06-11 23:24:02+03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="211" LINES="57"]
+]0;mtuomiko@armature: ~/projects/docker-devops/part1/4[01;32mmtuomiko@armature[00m:[01;34m~/projects/docker-devops/part1/4[00m$ docker run -d -it [K[K[K[K[K devopsdockeruh/exec_bash_exercise
+7120bb4ab243d14fb09fbae18ed8383bc3c7b5b2f5330c57d40840757b415cbe
+]0;mtuomiko@armature: ~/projects/docker-devops/part1/4[01;32mmtuomiko@armature[00m:[01;34m~/projects/docker-devops/part1/4[00m$ docker ps [K
+CONTAINER ID        IMAGE                               COMMAND                  CREATED             STATUS              PORTS               NAMES
+7120bb4ab243        devopsdockeruh/exec_bash_exercise   "docker-entrypoint.s…"   7 seconds ago       Up 4 seconds                            friendly_ganguly
+]0;mtuomiko@armature: ~/projects/docker-devops/part1/4[01;32mmtuomiko@armature[00m:[01;34m~/projects/docker-devops/part1/4[00m$ docker exec -it fi[Kriendly_ganguly bash
+root@7120bb4ab243:/usr/app# [Kroot@7120bb4ab243:/usr/app# ls -la
+total 32
+drwxr-xr-x 1 root root 4096 Jun  3 11:49 .
+drwxr-xr-x 1 root root 4096 Jun  3 11:49 ..
+-rw-r--r-- 1 root root  120 Jun  3 11:49 Dockerfile
+-rw-r--r-- 1 root root   57 Jun  3 11:49 README.md
+-rw-r--r-- 1 root root 1116 Jun  3 11:49 index.js
+-rw-r--r-- 1 root root  246 Jun 11 20:25 logs.txt
+root@7120bb4ab243:/usr/app# tail -f ./logs.txt
+Secret message is:
+"Docker is easy"
+Thu, 11 Jun 2020 20:25:04 GMT
+Thu, 11 Jun 2020 20:25:07 GMT
+Thu, 11 Jun 2020 20:25:10 GMT
+Thu, 11 Jun 2020 20:25:13 GMT
+Secret message is:
+"Docker is easy"
+Thu, 11 Jun 2020 20:25:19 GMT
+Thu, 11 Jun 2020 20:25:22 GMT
+Thu, 11 Jun 2020 20:25:25 GMT
+Thu, 11 Jun 2020 20:25:28 GMT
+Secret message is:
+"Docker is easy"
+Thu, 11 Jun 2020 20:25:34 GMT
+^C
+root@7120bb4ab243:/usr/app# exit
+exit
+]0;mtuomiko@armature: ~/projects/docker-devops/part1/4[01;32mmtuomiko@armature[00m:[01;34m~/projects/docker-devops/part1/4[00m$ docker stop friendly_ganguly 
+friendly_ganguly
+]0;mtuomiko@armature: ~/projects/docker-devops/part1/4[01;32mmtuomiko@armature[00m:[01;34m~/projects/docker-devops/part1/4[00m$ xe[K[Kexit
+exit
+
+Script done on 2020-06-11 23:25:57+03:00 [COMMAND_EXIT_CODE="0"]

@@ -1,0 +1,29 @@
+Start image command:
+docker run -it --name curlbuntu ubuntu:latest sh -c 'echo "Input website:"; read website; echo "Searching.."; sleep 1; curl http://$website;'
+
+Not working, input helsinki.fi gives error 'sh: 1: curl: not found' 
+
+Start container again:
+docker start curlbuntu
+
+Running container is not attached.
+
+Start bash inside the container:
+docker exec -it curlbuntu bash
+
+Install curl and exit:
+apt-get update
+apt-get install -y curl
+exit
+
+Attach the running container:
+docker attach curlbuntu
+
+The process is still waiting for input (we didn't see the first output line because we weren't attached).
+Input:
+helsinki.fi
+
+... and we get the expected HTML response.
+
+Running the container again, this time attached:
+docker start -ai curlbuntu

@@ -1,0 +1,10 @@
+Script started on 2020-06-11 22:34:19+03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="160" LINES="50"]
+]0;mtuomiko@armature: ~/projects/docker-devops/part1/1[01;32mmtuomiko@armature[00m:[01;34m~/projects/docker-devops/part1/1[00m$ docker ps -a
+CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS                      PORTS               NAMES
+0aeead92ff24        nginx               "/docker-entrypoint.…"   52 seconds ago      Exited (0) 37 seconds ago                       laughing_keller
+6035b7f2964b        nginx               "/docker-entrypoint.…"   56 seconds ago      Exited (0) 34 seconds ago                       clever_cori
+3e3e639ab488        nginx               "/docker-entrypoint.…"   58 seconds ago      Up 56 seconds               80/tcp              peaceful_carson
+]0;mtuomiko@armature: ~/projects/docker-devops/part1/1[01;32mmtuomiko@armature[00m:[01;34m~/projects/docker-devops/part1/1[00m$ script[K[K[K[K[K[Kexix[Kt
+exit
+
+Script done on 2020-06-11 22:34:27+03:00 [COMMAND_EXIT_CODE="0"]
