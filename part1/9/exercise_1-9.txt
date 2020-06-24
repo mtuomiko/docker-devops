@@ -1,0 +1,10 @@
+Script started on 2020-06-24 01:14:03+03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="160" LINES="50"]
+]0;mtuomiko@armature: ~/projects/docker-devops/part1/9[01;32mmtuomiko@armature[00m:[01;34m~/projects/docker-devops/part1/9[00m$ docker run -p[Kd -p 8080:80 devopsdockeruh/ports_exercise
+0316c2b5b6a65fbbce6c5d741b548ca79527d21c2fc20f6af7adbb6c0c5217ba
+]0;mtuomiko@armature: ~/projects/docker-devops/part1/9[01;32mmtuomiko@armature[00m:[01;34m~/projects/docker-devops/part1/9[00m$ curl localhost:8080
+Ports configured correctly!!]0;mtuomiko@armature: ~/projects/docker-devops/part1/9[01;32mmtuomiko@armature[00m:[01;34m~/projects/docker-devops/part1/9[00m$ docker stop 0316
+0316
+]0;mtuomiko@armature: ~/projects/docker-devops/part1/9[01;32mmtuomiko@armature[00m:[01;34m~/projects/docker-devops/part1/9[00m$ exit
+exit
+
+Script done on 2020-06-24 01:14:48+03:00 [COMMAND_EXIT_CODE="0"]

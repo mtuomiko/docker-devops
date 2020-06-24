@@ -1,0 +1,5 @@
+frontend-example-docker repository was cloned separately, ignored by this repo.
+Dockerfile copies the contents from that folder to the image.
+
+Run image with command:
+docker run -d -p 5000:5000 frontend-example-docker

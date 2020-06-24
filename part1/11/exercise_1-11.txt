@@ -1,0 +1,2 @@
+Image run with command:
+docker run --mount type=bind,source="$(pwd)"/logs.txt,target=/work/logs.txt -d -p 8000:8000 backend-example-docker

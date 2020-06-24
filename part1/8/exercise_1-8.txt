@@ -1,0 +1,7 @@
+Binding only the logs.txt using --mount which is apparently the preferred method:
+touch logs.txt
+docker run --mount type=bind,source="$(pwd)"/logs.txt,target=/usr/app/logs.txt devopsdockeruh/first_volume_exercise
+
+Binding only the logs.txt using -v (volume):
+touch logs.txt 
+docker run -v "$(pwd)"/logs.txt:/usr/app/logs.txt devopsdockeruh/first_volume_exercise
