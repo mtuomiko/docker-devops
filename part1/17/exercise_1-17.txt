@@ -1,0 +1,3 @@
+Image created from an Ubuntu image with Node.js added to it.
+Example usage:
+docker run -it -p 3000:3000 --mount type=bind,source="$(pwd)"/src,target=/work mtuomiko/node npm start

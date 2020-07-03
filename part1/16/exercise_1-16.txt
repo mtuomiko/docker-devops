@@ -1,0 +1,7 @@
+Heroku app found at url:
+https://pure-refuge-98503.herokuapp.com/
+
+I realize that the application doesn't function as intended. 
+It is unable to access some of it's assets (css and js) and removing presses 
+does not work. I believe this is a problem with the image and is not related 
+to the deployment to Heroku.  

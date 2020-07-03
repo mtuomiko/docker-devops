@@ -1,0 +1,2 @@
+Run image with command (e.g.):
+docker run -it -p 3000:3000 rails-example-project
