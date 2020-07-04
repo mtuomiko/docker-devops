@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+
+    backend:
+        image: backend-example-docker
+        volumes:
+            - ./logs.txt:/work/logs.txt
+        ports:
+            - 8000:8000
+
+    frontend:
+        image: frontend-example-docker
+        ports:
+            - 5000:5000
