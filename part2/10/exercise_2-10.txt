@@ -1,0 +1,9 @@
+Previous frontend image had API_URL environment variable for backend address 
+set as localhost:8000 which is not used anymore. Removing variable will result 
+in default path /api used for backend address which is suitable for us since 
+nginx will route requests sent to /api to the internal backend address.
+
+Similarly backend image had FRONT_URL variable set for allowing cross-origin 
+requests from the frontend but this is not needed anymore since as far the 
+browser is concerned the frontend and the backend are at the same 'origin'.
+

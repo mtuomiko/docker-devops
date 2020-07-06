@@ -1,0 +1,36 @@
+version: '3'
+
+services:
+  backend:
+    image: backend-example-docker
+    ports:
+      - 8000:8000
+    environment:
+      - REDIS=redis
+      - REDIS_PORT=6379
+      - DB_USERNAME=postgres
+      - DB_PASSWORD=secret
+      - DB_HOST=database
+    depends_on:
+      - redis
+      - database
+
+  frontend:
+    image: frontend-example-docker
+    ports:
+      - 5000:5000
+
+  redis:
+    image: redis
+    command: ["redis-server", "--appendonly", "yes"]
+    volumes:
+        - ./redis_data:/data
+
+  database:
+    image: postgres
+    restart: unless-stopped
+    environment:
+      - POSTGRES_PASSWORD=secret
+    volumes:
+      - ./sql_data:/var/lib/postgresql/data
+
