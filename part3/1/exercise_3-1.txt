@@ -1,0 +1,8 @@
+Original image sizes:
+Frontend 608 MB
+Backend 433 MB
+
+Optimized:
+Frontend 482 MB
+Backend 307 MB
+ 
