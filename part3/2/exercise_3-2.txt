@@ -1,0 +1,6 @@
+Repository including CircleCI config found at:
+https://github.com/mtuomiko/docker-devops-anecdotes
+
+App found at:
+https://powerful-sierra-38792.herokuapp.com/
+
