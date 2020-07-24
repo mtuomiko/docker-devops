@@ -4,5 +4,6 @@ Backend and frontend Dockerfiles modified to include adding user, changing owner
 
 Run images with typical commands: 
 `docker run -it -p 5000:5000 frontend-example-user`
+
 `docker run -it -p 8000:8000 backend-example-user` (doesn't include logs bind mount for backend)
 
