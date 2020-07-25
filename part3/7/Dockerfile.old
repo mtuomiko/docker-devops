@@ -1,0 +1,24 @@
+# Uses a basic Ubuntu image so needs multiple installs to be able to perform
+FROM ubuntu:16.04
+
+WORKDIR /app
+
+# Installs curl, git, ca-certificates and downloads Node.js install script
+RUN apt-get update && apt-get install --no-install-recommends -y \ 
+    curl git ca-certificates && \
+    curl -sL https://deb.nodesource.com/setup_12.x | bash - && \
+# Runs Node.js install
+    apt-get install --no-install-recommends -y nodejs && \
+# Clone project from Git repository
+    git clone https://github.com/mtuomiko/docker-devops-anecdotes.git . && \
+# Run npm commands to install dependencies, build app and install serve
+    npm install && \
+    npm run build && \
+    npm install -g serve && \
+# Finally remove not used software and caches
+    apt-get purge -y --auto-remove curl git && \
+    rm -rf /var/lib/apt/lists/*
+
+# Port variable used for Heroku compatibility
+CMD serve -s -l $PORT build
+
