@@ -3,4 +3,4 @@ https://github.com/mtuomiko/docker-devops-anecdotes
 
 App found at:
 https://powerful-sierra-38792.herokuapp.com/
-
+(app deleted from Heroku on 4.8.2022)
